@@ -1,0 +1,11 @@
+BUILD*
+venv*
+reproducer/*
+*.mod
+*__pycache__*
+*.tf
+*.png
+model/*/*.tf
+model/*/*.keras
+model/*/*.pb
+*.pdf

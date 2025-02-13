@@ -1,0 +1,9 @@
+[submodule "extern/h5fortran"]
+	path = extern/h5fortran
+	url = https://github.com/geospace-code/h5fortran.git
+[submodule "extern/phydll"]
+	path = extern/phydll
+	url = https://gitlab.com/cerfacs/phydll.git
+[submodule "extern/aixeleratorservice"]
+	path = extern/aixeleratorservice
+	url = git@github.com:RWTH-HPC/AIxeleratorService.git
