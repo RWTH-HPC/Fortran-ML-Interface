@@ -14,8 +14,8 @@ module load imkl/2023.1.0
 module load Score-P/8.4
 
 module load HDF5/1.14.0
-module load GCC/12.3.0
-module load OpenBLAS/0.3.23
+#module load GCC/12.3.0
+#module load OpenBLAS/0.3.23
 
 module load Python/3.11.3
 module load CUDA/12.3.0
@@ -23,7 +23,7 @@ module load cuDNN/8.9.7.29-CUDA-12.3.0
 module load CMake
 
 export FORTRAN_ML_VENV=${PWD}/venv-fortran-ml-py3113
-source ./venv-fortran-ml-py3113/bin/activate
+source ${FORTRAN_ML_VENV}/bin/activate
 
 if command -v readlink >/dev/null 2>&1; then
 script_name="$(readlink -f "${BASH_SOURCE:-$0}")"

@@ -1,0 +1,7 @@
+# ignore everything (i.e. all generated output files that land here)
+*
+# except the input files
+# input for SRGAN
+FHIT_32x32x32_output.h5
+# input for UNet
+H2_000057_prate.h5

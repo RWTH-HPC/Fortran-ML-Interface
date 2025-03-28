@@ -290,7 +290,6 @@ module ml_coupling_turbulence
                 nx = size(output_fields_post, 2) / self%upsampling
                 ny = size(output_fields_post, 3) / self%upsampling
                 nz = size(output_fields_post, 4) / self%upsampling
-                write(*,*) "nx = ", nx, " ny = ", ny, " nz = ", nz
             else
                 nx = size(output_fields_post, 2)
                 ny = size(output_fields_post, 3)

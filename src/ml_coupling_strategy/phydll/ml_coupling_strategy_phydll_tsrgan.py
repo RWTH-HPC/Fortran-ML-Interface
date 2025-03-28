@@ -1,16 +1,8 @@
-print(f"PHYDLL TEST 1", flush=True)
-import time
-sleep_time = 1
-print(f"PHYDLL sleeping for {sleep_time} seconds now!")
-time.sleep(sleep_time)
-print(f"PHYDLL awake! Going to initialize MPI now!")
 import mpi4py
 mpi4py.rc.initialize = False
 mpi4py.rc.finalize = False
 from mpi4py import MPI
-print(f"PHYDLL TEST 2", flush=True)
 MPI.Init()
-print(f"PHYDLL TEST 3 --> MPI Init done", flush=True)
 
 from pyphydll.pyphydll import PhyDLL
 import numpy as np
@@ -32,7 +24,6 @@ import nvtx
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("-nphy", "--NpPHY", type=int, default=0)
-parser.add_argument("-dimUNet", "--dimUNet", type=int, default=2)
 args = parser.parse_args()
 
 

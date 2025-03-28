@@ -99,6 +99,7 @@ fi
 # setup LD_LIBRARY_PATH to find all installed libaries
 # PhyDLL
 export LD_LIBRARY_PATH=${FORTRAN_ML_ROOT}/extern/phydll/BUILD/lib:${LD_LIBRARY_PATH}
+export PYTHONPATH=${PYTHONPATH}:${FORTRAN_ML_ROOT}/extern/phydll/BUILD/src/python:${FORTRAN_ML_ROOT}/model/
 # TensorFlow
 export LD_LIBRARY_PATH=${FORTRAN_ML_ROOT}/extern/tensorflow/lib:${LD_LIBRARY_PATH}
 # AIxeleratorService

@@ -180,11 +180,6 @@ module ml_coupling_strategy
         dim3 = size(fields, 3)
         dim4 = size(fields, 4)
         dim5 = size(fields, 5)
-        write(*,*) "dim1 = ", dim1
-        write(*,*) "dim2 = ", dim2
-        write(*,*) "dim3 = ", dim3
-        write(*,*) "dim4 = ", dim4
-        write(*,*) "dim5 = ", dim5
 
         do c = 1, dim5
             do k = 1, dim4
